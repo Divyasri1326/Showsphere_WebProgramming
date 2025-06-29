@@ -1,0 +1,39 @@
+﻿@model Showsphere.Models.Signup
+@{
+    ViewBag.Title = "Signup";
+}
+
+
+<h2>SignUp</h2>
+
+    
+
+<form asp-action="Signup" method="post">
+   <p>
+       <label>Email:</label><br />
+       <input asp-for="Email" />
+       <span asp-validation-for="Email"></span>
+   </p>
+
+   <p>
+       <label>Password:</label><br />
+       <input asp-for="Password" type="password" />
+       <span asp-validation-for="Password"></span>
+   </p>
+
+   <p>
+       <label>Retype Password:</label><br />
+       <input asp-for="RetypePassword" type="password" />
+       <span asp-validation-for="Password"></span>
+   </p>
+
+   <p>
+      <label><input asp-for="AgreeToTerms" type="checkbox" /> Agree to terms</label>
+      <span asp-validation-for="AgreeToTerms"></span>
+   </p>
+
+   <p><button type="submit">Sign Up</button></p>
+</form>
+
+
+
