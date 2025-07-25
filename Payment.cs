@@ -1,5 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema; // ✅ Add this
-using Microsoft.EntityFrameworkCore; // ✅ For [Precision] attribute
+﻿using System; 
+using Microsoft.EntityFrameworkCore; 
 
 namespace ShowSphere.Models
 {
